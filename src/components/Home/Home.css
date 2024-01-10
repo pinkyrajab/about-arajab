@@ -1,0 +1,71 @@
+.myHome{
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgba(101, 101, 101, 0.655)!important; */
+}
+video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.content{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+h1{
+    color: rgb(253, 170, 170)!important;
+    font-family: 'MonteCarlo', cursive!important;
+    font-size:40px!important;
+    margin-bottom:5px!important;
+}
+h2{
+    color:rgb(244, 208, 141);
+}
+.btnWelcome {
+    --c:  rgb(253, 170, 170)!important; /* the color*/
+    
+    /* box-shadow: 0 0 0 .1em inset var(--c); 
+    --_g: linear-gradient(var(--c) 0 0) no-repeat; */
+    /* background: 
+      var(--_g) calc(var(--_p,0%) - 100%) 0%,
+      var(--_g) calc(200% - var(--_p,0%)) 0%,
+      var(--_g) calc(var(--_p,0%) - 100%) 100%,
+      var(--_g) calc(200% - var(--_p,0%)) 100%; */
+    background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+    outline-offset: .1em;
+    position: absolute;
+    bottom: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-size .4s, background-position 0s .4s;
+  }
+  .btnWelcome:hover {
+    
+    transition: background-position .4s, background-size 0s;
+    color: white!important;
+  }
+  .btnWelcome:active {
+    box-shadow: 0 0 9e9q inset #0009; 
+    background-color: var(--c);
+    color: #fff;
+  }
+  

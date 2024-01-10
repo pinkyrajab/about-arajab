@@ -1,0 +1,13 @@
+.nav-link{
+    color: white!important;
+}
+.nav-link:hover{
+    color: rgb(253, 170, 170)!important;
+    font-family: 'MonteCarlo', cursive!important;
+    font-size: 20px;
+}
+.active{
+    color: rgb(253, 170, 170)!important;
+    font-family: 'MonteCarlo', cursive!important;
+    font-size: 25px!important;
+}
