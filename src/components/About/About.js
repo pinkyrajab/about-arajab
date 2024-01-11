@@ -1,5 +1,4 @@
 import './About.css'
-import { NavBar } from '../NavBar'
 import img from './../../assets/Hemmingways1.jpeg'
 import { useEffect, useState } from 'react';
 
@@ -51,66 +50,52 @@ const TypingEffect = ({ targetTexts }) => {
   
 export function About(){
     const targetTexts = ['Full Stack Engineer', 'Self-motivated', 'Attention to detail', 'Values Teamwork'];
+    
     return(
-        <div className='about' id="About">
-            <div className='container-fluid' style={{paddingLeft:"60px"}}>
-                <div className='row'>
-                    <div className='col-md-2 '>
-                        <NavBar/>
-                    </div>
-                    <div className='col-md-10' style={{padding:"0"}}>
-                        <div class="card cardContent">
-                                <div class="card-body">
-                                    <h5 class="card-title"> ABOUT ME</h5>
-                                    {targetTexts && <TypingEffect targetTexts={targetTexts} />}
-                                    
-                                    <div className='container-fluid about_text'>
-                                        <div className='row'>
-                                            <div className='col-8'><hr style={{marginBottom:"14px"}}></hr>
-                                                <p>
-                                                Hi, my name is Amina Rajab.
-                                                Welcome to my corner of the digital universe! I'm a passionate and versatile Full Stack Developer with a knack for crafting innovative and efficient solutions. My journey in the world of 
-                                                software development has been driven by a relentless curiosity and a commitment to turning ideas into reality.
-                                                </p>
-                                                <p >
-                                                    I specialize in full-stack web development, combining my skills in both front-end and back-end technologies. From creating sleek and responsive user 
-                                                    interfaces to architecting robust server-side systems, I thrive in the dynamic and ever-evolving realm of software development.
-                                                </p>
-                                                <hr style={{marginTop:"40px"}}></hr>
-                                                <div className='row'>
-                                                    <div className='col-lg-6'>
-                                                        <ul style={{ padding: "0", listStyle: "none" }}>
-                                                            <li className='listItem'><span className='listTitle'>Birthday :</span>22.07.2001</li>
-                                                            <li className='listItem'><span className='listTitle'>Age :</span>22</li>
-                                                            <li className='listItem'><span className='listTitle'>Address :</span>Hendred Road, Nairobi</li>
-                                                            <li className='listItem'><span className='listTitle'>Email :</span>itsaminarajab@gmail.com</li>
-                                                            <li className='listItem'><span className='listTitle'>Phone :</span>+254759899033</li>
-                                                        </ul>
-                                                    </div>
+      <>
+        {targetTexts && <TypingEffect targetTexts={targetTexts} />}
+        
+        <div className='container-fluid about_text'>
+            <div className='row'>
+                <div className='col-8'><hr style={{marginBottom:"14px"}}></hr>
+                    <p>
+                    Hi, my name is Amina Rajab.
+                    Welcome to my corner of the digital universe! I'm a passionate and versatile Full Stack Developer with a knack for crafting innovative and efficient solutions. My journey in the world of 
+                    software development has been driven by a relentless curiosity and a commitment to turning ideas into reality.
+                    </p>
+                    <p >
+                        I specialize in full-stack web development, combining my skills in both front-end and back-end technologies. From creating sleek and responsive user 
+                        interfaces to architecting robust server-side systems, I thrive in the dynamic and ever-evolving realm of software development.
+                    </p>
+                    <hr style={{marginTop:"40px"}}></hr>
+                    <div className='row'>
+                        <div className='col-lg-6'>
+                            <ul style={{ padding: "0", listStyle: "none" }}>
+                                <li className='listItem'><span className='listTitle'>Birthday :</span>22.07.2001</li>
+                                <li className='listItem'><span className='listTitle'>Age :</span>22</li>
+                                <li className='listItem'><span className='listTitle'>Address :</span>Hendred Road, Nairobi</li>
+                                <li className='listItem'><span className='listTitle'>Email :</span>itsaminarajab@gmail.com</li>
+                                <li className='listItem'><span className='listTitle'>Phone :</span>+254759899033</li>
+                            </ul>
+                        </div>
 
-                                                    <div className='col-lg-6'>
-                                                        <ul style={{ padding: "0", listStyle: "none" }}>
-                                                                <li className='listItem'><span className='listTitle'>Nationality :</span>Kenyan</li>
-                                                                <li className='listItem'><span className='listTitle'>Study :</span>Computer Science</li>
-                                                                <li className='listItem'><span className='listTitle'>Degree :</span>Bachelor 2022</li>
-                                                                <li className='listItem'><span className='listTitle'>Freelance :</span>Available</li>
-                                                                <li className='listItem'><span className='listTitle'>Experience :</span>2</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-                                            <div className='col-4'>
-                                            <img className='myProfileImage' src={img}alt="Your Alt Text" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div className='col-lg-6'>
+                            <ul style={{ padding: "0", listStyle: "none" }}>
+                                    <li className='listItem'><span className='listTitle'>Nationality :</span>Kenyan</li>
+                                    <li className='listItem'><span className='listTitle'>Study :</span>Computer Science</li>
+                                    <li className='listItem'><span className='listTitle'>Degree :</span>Bachelor 2022</li>
+                                    <li className='listItem'><span className='listTitle'>Freelance :</span>Available</li>
+                                    <li className='listItem'><span className='listTitle'>Experience :</span>2 years</li>
+                            </ul>
                         </div>
                     </div>
+                    
+                </div>
+                <div className='col-4'>
+                <img className='myProfileImage' src={img}alt="Your Alt Text" />
                 </div>
             </div>
-            
         </div>
-    )
-}
+        </>
+
+    )}                         
