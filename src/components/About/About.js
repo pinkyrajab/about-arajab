@@ -1,4 +1,4 @@
-import './About.css'
+
 import img from './../../assets/Hemmingways1.jpeg'
 import { useEffect, useState } from 'react';
 
@@ -53,11 +53,13 @@ export function About(){
     
     return(
       <>
-        {targetTexts && <TypingEffect targetTexts={targetTexts} />}
+      <div className='contentAbout'>
+         {targetTexts && <TypingEffect targetTexts={targetTexts} />}
         
         <div className='container-fluid about_text'>
             <div className='row'>
-                <div className='col-8'><hr style={{marginBottom:"14px"}}></hr>
+                <div className='col-md-8 order-md-1 order-2'>
+                  <hr style={{marginBottom:"14px"}}></hr>
                     <p>
                     Hi, my name is Amina Rajab.
                     Welcome to my corner of the digital universe! I'm a passionate and versatile Full Stack Developer with a knack for crafting innovative and efficient solutions. My journey in the world of 
@@ -91,11 +93,14 @@ export function About(){
                     </div>
                     
                 </div>
-                <div className='col-4'>
+                <div className='col-md-4 order-md-2 order-1'>
                 <img className='myProfileImage' src={img}alt="Your Alt Text" />
                 </div>
             </div>
         </div>
+        <br/>
+      </div>
+       
         </>
 
     )}                         
