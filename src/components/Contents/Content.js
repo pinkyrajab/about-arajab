@@ -13,7 +13,7 @@ export function Content(){
                     <div className='col-md-2 '>
                         <NavBar setActiveItem={setActiveItem}/>
                     </div>
-                    <div className='col-md-10 allContents' style={{padding:"0"}} >
+                    <div className='col-md-10 allContents col-sm-12' style={{padding:"0"}} >
                         <div class="card cardContent" >
                                 <div class="card-body">
                                   {activeItem === 'about' && (
